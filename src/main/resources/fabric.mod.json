@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "rubyrush",
+  "version": "${version}",
+
+  "name": "Ruby Rush Mod",
+  "description": "All things ruby!",
+  "authors": [
+    "SageTheSloth"
+  ],
+  "contact": {
+    "homepage": "https://github.com/sagethesloth/",
+    "sources": "https://github.com/sagethesloth/ruby-rush"
+  },
+
+  "license": "MIT",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.sagethesloth.rubyrush.RubyRush"
+    ],
+    "client": [
+      "net.sagethesloth.rubyrush.RubyRushClient"
+    ]
+  },
+  "mixins": [
+    "rubyrush.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
